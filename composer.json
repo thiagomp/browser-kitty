@@ -1,0 +1,41 @@
+{
+    "name": "clyo/browser-kitty",
+    "type": "library",
+    "description": "Extension of Symfony BrowserKit Component",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        },
+        {
+            "name": "Thiago Melo",
+            "email": "thiagomp@gmail.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "symfony/dom-crawler": "^4.4|^5.0"
+    },
+    "require-dev": {
+        "symfony/css-selector": "^4.4|^5.0",
+        "symfony/http-client": "^4.4|^5.0",
+        "symfony/mime": "^4.4|^5.0",
+        "symfony/process": "^4.4|^5.0"
+    },
+    "suggest": {
+        "symfony/process": ""
+    },
+    "autoload": {
+        "psr-4": { "Clyo\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
