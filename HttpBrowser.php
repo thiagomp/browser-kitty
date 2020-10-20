@@ -61,7 +61,7 @@ class HttpBrowser extends AbstractBrowser
      */
     private function getBodyAndExtraHeaders(Request $request, array $headers): array
     {
-        if (\in_array($request->getMethod(), ['GET', 'HEAD'])) {
+        if (('GET' === $request->getMethod() && !isset($headers['content-type'])) || 'HEAD' === $request->getMethod()) {
             return ['', []];
         }
 
